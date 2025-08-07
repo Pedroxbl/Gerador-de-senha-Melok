@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criador de Senha</title>
+    <link rel="stylesheet" href="senha.css">
+</head>
+<body>
+    <main class="container">
+        <header class="cabecalho">
+            <img src="ble.webp" alt="ícone de cadeado">
+            <h1 class="titulo">Criador de Senhas</h1>
+            <h2 class="subtitulo">Gere uma senha segura em segundos</h2>
+        </header>
+
+        <section class="campo-gerado">
+            <label for="campo">Senha gerada:</label>
+            <input id="campo" type="text" readonly>
+        </section>
+
+        <section class="configuracoes">
+            <h3 class="configuracoes-titulo">Ajustes da senha</h3>
+            <div class="colunas-ajustes">
+                <div class="grupo">
+                    <h4>Quantidade de caracteres</h4>
+                    <div class="controle">
+                        <button class="btn-ajuste">-</button>
+                        <p class="numero">12</p>
+                        <button class="btn-ajuste">+</button>
+                    </div>
+                </div>
+
+                <div class="grupo">
+                    <h4>Opções da senha</h4>
+                    <div>
+                        <input type="checkbox" id="upper" class="chk" checked>
+                        <label for="upper">Maiúsculas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="lower" class="chk">
+                        <label for="lower">Minúsculas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="digit" class="chk">
+                        <label for="digit">Números</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="symbol" class="chk">
+                        <label for="symbol">Símbolos</label>
+                    </div>
+                </div>
+
+                <div class="grupo">
+                    <h4>Nível de segurança</h4>
+                    <div class="barra-base"></div>
+                    <div class="indicador"></div>
+                    <div class="etiquetas">
+                        <span>Fraca</span>
+                        <span>Média</span>
+                        <span>Forte</span>
+                    </div>
+                    <p class="info-seguranca"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="gerador.js"></script>
+</body>
+</html>
